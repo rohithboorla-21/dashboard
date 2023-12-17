@@ -1,0 +1,12 @@
+.dashboard-title{
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+.dashboard-body{
+    margin-left: 70px;
+    width: 90%;
+    height: 1000px;
+    background-color: #D9D9D9;
+    border-radius: 2.5%;
+}

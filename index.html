@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Water Footprint Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="js/scripts2.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/refer.js"></script>
+    <script src="js/ach_bad.js"></script>
+    <script src="js/help.js"></script>
+    <script src="js/settings.js"></script>
+
+    
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+
+            <div class="navigation">
+                <div class="nav-items">
+                    <i class="uil uil-times nav-close-btn"></i>
+                    <a href="#"><i class="uil uil-home"></i> <b>HydroMetrics</b></a>
+                    <a href="#"><i class="uil uil-compass"></i> Educational Resources</a>
+                    <a href="#"><i class="uil uil-info-circle"></i>News & Articles</a>
+                    <a href="#"><i class="uil uil-document-layout-left"></i>Water Footprint Calculator</a>
+
+                </div>
+            </div>
+            <i class="uil uil-apps nav-menu-btn">
+                
+            </i>
+        </div>
+        <div class="scroll-indicator-container">
+            <div class="scroll-indicator-bar"></div>
+        </div>
+    </header>
+    
+    <div class="grid-container">
+        <!-- Header -->
+        <!-- <header class="header">
+            <div class="menu-icon" onclick="openSidebar()">
+                <span class="material-icons-outlined">menu</span>
+            </div>
+            <div class="header-left">
+                <span class="material-icons-outlined">search</span>
+            </div>
+            <div class="header-right">
+                <span class="material-icons"><i>cloud</i></span>
+                <span class="material-icons"><i>email</i></span>
+                <span class="material-icons"><i>account_circle</i></span>
+            </div>
+        </header> -->
+
+        
+        <!-- End Header -->
+
+        <!-- Sidebar -->
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <div class="sidebar-title">
+            <img class="sidebar-pic" src="Images/profile.jpg">
+            <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+            </div>
+
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                    <button class="sidebar-button" data-page-id="profile">
+                        Profile
+                    </button>
+                </li>
+                <li class="sidebar-list-item">
+                  <button class="sidebar-button" data-page-id="dashboard" >
+                   Dashboard
+                </button>
+                </li>
+                <li class="sidebar-list-item">
+                  <button class="sidebar-button" data-page-id="community">
+                    Community Engagement
+                </button>
+                </li>
+                <li class="sidebar-list-item">
+                  <button class="sidebar-button" data-page-id="ach_bad">
+                    Acheivements & Badges
+                </button>
+                </li>
+                <li class="sidebar-list-item">
+                    <button class="sidebar-button" data-page-id="refer">
+                        Refer a friend
+                    </button>
+                </li>
+                <li class="sidebar-list-item">
+                  <button class="sidebar-button" data-page-id="settings">
+                    Settings
+                </button>
+                </li>
+                <li class="sidebar-list-item">
+                  <button class="sidebar-button" data-page-id="help">
+                    Help Desk & Feedback
+                </button>
+                </li>
+                <li class="sidebar-list-item">
+                  <button class="sidebar-button">
+                   Logout
+                </button>
+                </li>
+            </ul>
+        </aside>
+        <!-- End Sidebar -->
+
+        <!-- End Sidebar -->
+
+        <!-- Main -->
+        <main class="main-container">
+            <div class="main-title">
+                <!-- <h2>WATER FOOTPRINT DASHBOARD</h2> -->
+            </div>
+        </main>
+        <!-- End Main -->
+    </div>
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+    <script src="js/scripts2.js"></script>
+    <!-- <script src="js/scripts2.js"></script> -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navMenuBtn = document.querySelector('.nav-menu-btn');
+            const navItems = document.querySelector('.nav-items');
+            const navCloseBtn = document.querySelector('.nav-close-btn');
+
+            navMenuBtn.addEventListener('click', () => {
+                document.body.classList.add('menu-active');
+            });
+
+            navCloseBtn.addEventListener('click', () => {
+                document.body.classList.remove('menu-active');
+            });
+        });
+    </script>
+</body>
+</html>
